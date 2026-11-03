@@ -1,0 +1,231 @@
+{
+ "sessions": 12330,
+ "purchase_rate": 0.155,
+ "buyers_vs_browsers": [
+  {
+   "signal": "PageValues",
+   "buyer_mean": 27.265,
+   "browser_mean": 1.976,
+   "cohens_d": 0.98,
+   "welch_p": 9.610669500003073e-174,
+   "mann_whitney_p": 0.0
+  },
+  {
+   "signal": "ExitRates",
+   "buyer_mean": 0.02,
+   "browser_mean": 0.047,
+   "cohens_d": -0.73,
+   "welch_p": 0.0,
+   "mann_whitney_p": 1.1568241971827584e-175
+  },
+  {
+   "signal": "BounceRates",
+   "buyer_mean": 0.005,
+   "browser_mean": 0.025,
+   "cohens_d": -0.54,
+   "welch_p": 2.5872282967677298e-253,
+   "mann_whitney_p": 1.832770059117907e-61
+  },
+  {
+   "signal": "ProductRelated",
+   "buyer_mean": 48.21,
+   "browser_mean": 28.715,
+   "cohens_d": 0.39,
+   "welch_p": 8.834784925440105e-43,
+   "mann_whitney_p": 1.0524385772690994e-107
+  },
+  {
+   "signal": "ProductRelated_Duration",
+   "buyer_mean": 1876.21,
+   "browser_mean": 1069.988,
+   "cohens_d": 0.39,
+   "welch_p": 2.1737910437733234e-45,
+   "mann_whitney_p": 5.332268364164621e-128
+  },
+  {
+   "signal": "Administrative",
+   "buyer_mean": 3.394,
+   "browser_mean": 2.118,
+   "cohens_d": 0.37,
+   "welch_p": 4.9703864466733455e-43,
+   "mann_whitney_p": 1.3119317092531027e-77
+  },
+  {
+   "signal": "SpecialDay",
+   "buyer_mean": 0.023,
+   "browser_mean": 0.068,
+   "cohens_d": -0.26,
+   "welch_p": 1.0054572163886963e-37,
+   "mann_whitney_p": 5.079559636711724e-22
+  },
+  {
+   "signal": "Administrative_Duration",
+   "buyer_mean": 119.483,
+   "browser_mean": 73.74,
+   "cohens_d": 0.25,
+   "welch_p": 2.173196963155287e-20,
+   "mann_whitney_p": 4.672260904769867e-74
+  },
+  {
+   "signal": "Informational",
+   "buyer_mean": 0.786,
+   "browser_mean": 0.452,
+   "cohens_d": 0.24,
+   "welch_p": 2.0891080130067784e-19,
+   "mann_whitney_p": 1.2027813960741891e-36
+  },
+  {
+   "signal": "Informational_Duration",
+   "buyer_mean": 57.611,
+   "browser_mean": 30.236,
+   "cohens_d": 0.18,
+   "welch_p": 4.772254431068733e-11,
+   "mann_whitney_p": 1.4090385051061033e-35
+  }
+ ],
+ "segments": {
+  "VisitorType": {
+   "conversion_rate": {
+    "New_Visitor": 0.249,
+    "Other": 0.188,
+    "Returning_Visitor": 0.139
+   },
+   "chi2": 135.3,
+   "dof": 2,
+   "p": 4.269904152293867e-30
+  },
+  "Weekend": {
+   "conversion_rate": {
+    "True": 0.174,
+    "False": 0.149
+   },
+   "chi2": 10.4,
+   "dof": 1,
+   "p": 0.0012663251061221968
+  },
+  "Month": {
+   "conversion_rate": {
+    "Nov": 0.254,
+    "Oct": 0.209,
+    "Sep": 0.192,
+    "Aug": 0.176,
+    "Jul": 0.153,
+    "Dec": 0.125,
+    "May": 0.109,
+    "June": 0.101,
+    "Mar": 0.101,
+    "Feb": 0.016
+   },
+   "chi2": 384.9,
+   "dof": 9,
+   "p": 2.2387855164805443e-77
+  }
+ },
+ "anova_pagevalue_by_visitor": {
+  "F": 90.5,
+  "p": 1.0033303968805295e-39
+ },
+ "logistic": {
+  "pseudo_r2": 0.301,
+  "terms": [
+   {
+    "term": "C(VisitorType)[T.Other]",
+    "odds_ratio": 0.52,
+    "ci_low": 0.19,
+    "ci_high": 1.43,
+    "p": 0.20300270958507094
+   },
+   {
+    "term": "C(VisitorType)[T.Returning_Visitor]",
+    "odds_ratio": 0.71,
+    "ci_low": 0.6,
+    "ci_high": 0.84,
+    "p": 4.012977155443718e-05
+   },
+   {
+    "term": "C(Weekend)[T.True]",
+    "odds_ratio": 1.16,
+    "ci_low": 1.01,
+    "ci_high": 1.32,
+    "p": 0.03830225199259486
+   },
+   {
+    "term": "PageValues",
+    "odds_ratio": 4.38,
+    "ci_low": 4.03,
+    "ci_high": 4.77,
+    "p": 2.333965263141393e-256
+   },
+   {
+    "term": "ProductRelated_Duration",
+    "odds_ratio": 1.29,
+    "ci_low": 1.22,
+    "ci_high": 1.37,
+    "p": 3.8901404220642705e-19
+   },
+   {
+    "term": "ExitRates",
+    "odds_ratio": 0.45,
+    "ci_low": 0.36,
+    "ci_high": 0.56,
+    "p": 2.560718916527846e-12
+   },
+   {
+    "term": "BounceRates",
+    "odds_ratio": 0.87,
+    "ci_low": 0.64,
+    "ci_high": 1.17,
+    "p": 0.35999815930308743
+   },
+   {
+    "term": "Administrative",
+    "odds_ratio": 1.02,
+    "ci_low": 0.96,
+    "ci_high": 1.08,
+    "p": 0.5002323084558418
+   },
+   {
+    "term": "Informational",
+    "odds_ratio": 1.04,
+    "ci_low": 0.98,
+    "ci_high": 1.1,
+    "p": 0.19454947444543647
+   }
+  ]
+ },
+ "signal_loss": {
+  "full_auc": 0.893,
+  "drop_group": {
+   "value signal (PageValues)": 0.136,
+   "engagement depth (product pages + time)": 0.0,
+   "drop-off signals (bounce + exit rates)": 0.0,
+   "visitor context (new vs returning, source, month)": 0.012
+  }
+ },
+ "coverage_curve": [
+  {
+   "share_missing": 0,
+   "auc": 0.893
+  },
+  {
+   "share_missing": 0.1,
+   "auc": 0.877
+  },
+  {
+   "share_missing": 0.25,
+   "auc": 0.848
+  },
+  {
+   "share_missing": 0.5,
+   "auc": 0.808
+  },
+  {
+   "share_missing": 0.75,
+   "auc": 0.787
+  },
+  {
+   "share_missing": 1.0,
+   "auc": 0.757
+  }
+ ]
+}

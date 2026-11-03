@@ -1,0 +1,6 @@
+.venv/
+data/
+__pycache__/
+PROJECT_BRIEF.md
+STUDY_GUIDE.md
+*.bak
